@@ -271,7 +271,7 @@
       <p class="hero__lead">
         DAWA supplies precious metals and tobacco to licensed trade partners — sourced from
         trusted producers, fully insured and shipped by air and sea. Then we invite you to
-        experience them first-hand.
+        experience them first-hand, with a glass of DAWA Wine.
       </p>
       <div class="hero__ctas">
         <a class="btn btn--gold" href="#contact">Become a partner</a>
@@ -421,8 +421,9 @@
         <header class="section__head reveal">
           <p class="kicker">Partner events</p>
           <h2>Experience it before you stock it</h2>
-          <p>We host private, trade-only events where business partners meet producers and
-            experience our products in person, before committing to an order.</p>
+          <p>We host private, trade-only events where business partners meet producers,
+            experience our products in person, and raise a glass of DAWA Wine, our signature
+            served nowhere else.</p>
         </header>
 
         <div class="cards cards--3">
@@ -448,6 +449,81 @@
             <p>New-season launches and producer meet-ups in our trade hubs, plus stands at major international trade fairs.</p>
           </article>
         </div>
+
+        <!-- DAWA Wine — event-exclusive signature tonic -->
+        <article class="wine reveal" id="dawa-wine" aria-labelledby="wine-title">
+          <div class="wine__visual" aria-hidden="true">
+            <div class="wine__glow"></div>
+            <svg class="wine__bottle" viewBox="0 0 160 420">
+              <defs>
+                <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#1a0606"/>
+                  <stop offset=".3" stop-color="#4a0f14"/>
+                  <stop offset=".55" stop-color="#2a080b"/>
+                  <stop offset="1" stop-color="#120304"/>
+                </linearGradient>
+                <linearGradient id="wineShine" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+                  <stop offset=".5" stop-color="#fff" stop-opacity=".35"/>
+                  <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="labelGold" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#fff1b8"/>
+                  <stop offset=".45" stop-color="#e6b54f"/>
+                  <stop offset="1" stop-color="#a8701f"/>
+                </linearGradient>
+                <clipPath id="bottleClip">
+                  <path d="M64 8h32v70c0 18 34 34 34 70v250c0 8-6 14-14 14H44c-8 0-14-6-14-14V148c0-36 34-52 34-70Z"/>
+                </clipPath>
+              </defs>
+              <path d="M64 8h32v70c0 18 34 34 34 70v250c0 8-6 14-14 14H44c-8 0-14-6-14-14V148c0-36 34-52 34-70Z" fill="url(#glass)"/>
+              <g clip-path="url(#bottleClip)">
+                <rect class="wine__sheen" x="-60" y="0" width="50" height="420" fill="url(#wineShine)"/>
+                <rect x="44" y="120" width="6" height="280" rx="3" fill="#fff" opacity=".12"/>
+              </g>
+              <!-- capsule -->
+              <rect x="61" y="4" width="38" height="58" rx="4" fill="url(#labelGold)"/>
+              <rect x="61" y="52" width="38" height="4" fill="#7a4d12" opacity=".5"/>
+              <!-- label -->
+              <rect x="38" y="200" width="84" height="150" rx="6" fill="#f6ecd6"/>
+              <rect x="44" y="206" width="72" height="138" rx="4" fill="none" stroke="url(#labelGold)" stroke-width="1.5"/>
+              <path d="M80 222c10 6 14 15 12 25-2 9-8 14-12 16-4-2-10-7-12-16-2-10 2-19 12-25Z" fill="#5c3412" opacity=".85"/>
+              <path d="M80 226v36" stroke="#f6ecd6" stroke-width="1"/>
+              <text x="80" y="290" text-anchor="middle" font-family="Georgia, serif" font-size="18" font-weight="700" letter-spacing="4" fill="#3b0d10">DAWA</text>
+              <text x="80" y="306" text-anchor="middle" font-family="Georgia, serif" font-size="9" letter-spacing="3" fill="#8a5a12">WINE</text>
+              <text x="80" y="330" text-anchor="middle" font-family="system-ui, sans-serif" font-size="6" letter-spacing="2.2" fill="#6b5a40">AMAZONIA</text>
+            </svg>
+            <svg class="wine__glass" viewBox="0 0 100 180">
+              <defs>
+                <linearGradient id="pour" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#9b1c2a"/>
+                  <stop offset="1" stop-color="#4a0710"/>
+                </linearGradient>
+                <clipPath id="bowl"><path d="M14 10h72c0 40-12 70-36 74C26 80 14 50 14 10Z"/></clipPath>
+              </defs>
+              <g clip-path="url(#bowl)">
+                <rect class="wine__liquid" x="0" y="44" width="100" height="60" fill="url(#pour)"/>
+              </g>
+              <path d="M14 10h72c0 40-12 70-36 74C26 80 14 50 14 10Z" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.6"/>
+              <path d="M50 84v70M28 160c6-5 38-5 44 0" stroke="rgba(255,255,255,.55)" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+              <path d="M22 18c0 24 6 44 16 54" stroke="#fff" stroke-opacity=".35" stroke-width="2" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+
+          <div class="wine__body">
+            <p class="kicker">Events-only signature</p>
+            <h3 class="wine__title" id="wine-title">DAWA Wine</h3>
+            <p class="wine__lead">Our proprietary tonic, crafted from barks gathered in the Amazon rainforest.
+              It is brewed just once a year over eight patient months, and it is never sold —
+              you can only taste it at a DAWA partner event.</p>
+            <ul class="wine__facts">
+              <li><strong>1</strong><span>Batch a year</span></li>
+              <li><strong>8</strong><span>Months in the making</span></li>
+              <li><strong>0</strong><span>Bottles sold in stores</span></li>
+            </ul>
+            <p class="wine__note">Served only to adult guests at DAWA events, where local law allows. Please enjoy responsibly.</p>
+          </div>
+        </article>
 
         <div class="events__cta reveal">
           <p>Invitations go to registered trade partners. New to DAWA? Request an invitation to the next event near you.</p>
@@ -537,7 +613,7 @@
         <span class="brand__name">DAWA<small>Wholesale Distribution</small></span>
       </a>
       <p>© <span data-year>2026</span> DAWA Wholesale Distribution. All rights reserved.</p>
-      <p class="footer__note">Trade customers only. Tobacco products are supplied exclusively to licensed businesses and are not sold to consumers or to anyone under the legal age. Smoking seriously harms your health. Prices and availability are subject to market conditions.</p>
+      <p class="footer__note">Trade customers only. Tobacco products are supplied exclusively to licensed businesses and are not sold to consumers or to anyone under the legal age. Smoking seriously harms your health. DAWA Wine is served only at private DAWA events to guests of legal drinking age; please enjoy responsibly. Prices and availability are subject to market conditions.</p>
     </div>
   </footer>
 

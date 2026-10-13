@@ -1,5 +1,5 @@
 /* DAWA service worker — offline app shell, stale-while-revalidate for everything else */
-const VERSION = 'dawa-v2';
+const VERSION = 'dawa-v3';
 const SHELL = [
   './',
   'index.html',

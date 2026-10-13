@@ -4,7 +4,7 @@ Static, dependency-free Progressive Web App landing page for DAWA, a wholesale d
 precious metals and tobacco that also hosts trade-only partner events.
 
 Sections: animated hero · trade hubs · key figures · product divisions (precious metals, tobacco) ·
-logistics · partner events · how it works · compliance · contact.
+logistics · partner events (incl. DAWA Wine, the events-only signature tonic) · how it works · compliance · contact.
 
 ## Animated hero
 The hero artwork is rebuilt from layers so every element moves on its own and the scene
