@@ -10,7 +10,8 @@
 
   <!-- PWA -->
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="assets/icons/favicon-48.png" sizes="48x48" type="image/png">
   <link rel="icon" href="assets/icons/icon-192.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -25,28 +26,19 @@
   <meta property="og:type" content="website">
 
   <link rel="preload" href="assets/data/land.json" as="fetch" type="application/json" crossorigin>
+  <link rel="preload" href="assets/logo/dawa-logo.webp" as="image" type="image/webp">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="nav" data-nav>
-    <a class="brand" href="#top" aria-label="DAWA home">
-      <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true">
-        <defs>
-          <linearGradient id="brandGold" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#fff1b8"/>
-            <stop offset=".45" stop-color="#e6b54f"/>
-            <stop offset="1" stop-color="#a8701f"/>
-          </linearGradient>
-        </defs>
-        <circle cx="32" cy="32" r="28" fill="none" stroke="url(#brandGold)" stroke-width="3.5"/>
-        <ellipse cx="32" cy="32" rx="12" ry="28" fill="none" stroke="url(#brandGold)" stroke-width="2" opacity=".55"/>
-        <path d="M5 32h54" stroke="url(#brandGold)" stroke-width="2" opacity=".55"/>
-        <path d="M22 18h10c8.5 0 14 5.6 14 14s-5.5 14-14 14H22Z" fill="url(#brandGold)"/>
-        <path d="M28 24h4c5 0 8 3 8 8s-3 8-8 8h-4Z" fill="#0b2a63"/>
-      </svg>
-      <span class="brand__name">DAWA<small>Wholesale Distribution</small></span>
+    <a class="brand" href="#top" aria-label="DAWA — home">
+      <picture>
+        <source srcset="assets/logo/dawa-logo.webp" type="image/webp">
+        <img class="brand__logo" src="assets/logo/dawa-logo.png" alt="DAWA" width="720" height="156">
+      </picture>
+      <span class="brand__tagline">Wholesale Distribution</span>
     </a>
 
     <nav class="nav__links" id="nav-links" aria-label="Primary">
@@ -609,8 +601,12 @@
 
   <footer class="footer">
     <div class="container footer__inner">
-      <a class="brand brand--footer" href="#top">
-        <span class="brand__name">DAWA<small>Wholesale Distribution</small></span>
+      <a class="brand brand--footer" href="#top" aria-label="DAWA — back to top">
+        <picture>
+          <source srcset="assets/logo/dawa-logo.webp" type="image/webp">
+          <img class="brand__logo" src="assets/logo/dawa-logo.png" alt="DAWA" width="720" height="156" loading="lazy">
+        </picture>
+        <span class="brand__tagline">Wholesale Distribution</span>
       </a>
       <p>© <span data-year>2026</span> DAWA Wholesale Distribution. All rights reserved.</p>
       <p class="footer__note">Trade customers only. Tobacco products are supplied exclusively to licensed businesses and are not sold to consumers or to anyone under the legal age. Smoking seriously harms your health. DAWA Wine is served only at private DAWA events to guests of legal drinking age; please enjoy responsibly. Prices and availability are subject to market conditions.</p>

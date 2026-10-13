@@ -121,12 +121,17 @@ p { margin: 0 0 1em; }
   box-shadow: 0 8px 30px -12px rgba(0, 0, 0, .4);
 }
 .brand { display: inline-flex; align-items: center; gap: .65rem; text-decoration: none; }
-.brand__mark { width: 40px; height: 40px; filter: drop-shadow(0 2px 6px rgba(0,0,0,.25)); }
-.brand__name {
-  font: 700 1.35rem/1 var(--font-display); letter-spacing: .14em;
-  display: flex; flex-direction: column;
+.brand { flex-direction: column; align-items: flex-start; gap: .3rem; }
+.brand picture { display: block; }
+.brand__logo {
+  height: 34px; width: auto;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, .35));
 }
-.brand__name small { font: 500 .62rem/1.6 var(--font-body); letter-spacing: .28em; text-transform: uppercase; opacity: .85; }
+.brand__tagline {
+  font: 600 .58rem/1 var(--font-body); letter-spacing: .32em; text-transform: uppercase;
+  color: var(--gold-100); opacity: .85;
+  padding-left: .1rem;
+}
 .nav__links { display: flex; gap: 1.75rem; }
 .nav__links a {
   text-decoration: none; font-weight: 500; font-size: .95rem; opacity: .9;
@@ -163,7 +168,8 @@ p { margin: 0 0 1em; }
   .nav__links a::after { display: none; }
 }
 @media (max-width: 420px) {
-  .brand__name small { display: none; }
+  .brand__tagline { display: none; }
+  .brand__logo { height: 26px; }
   .nav [data-install] { padding: .6rem .8rem; }
 }
 
@@ -766,6 +772,7 @@ p { margin: 0 0 1em; }
 .footer__inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
 .footer p { margin: 0; }
 .brand--footer { color: var(--white); }
+.brand--footer .brand__logo { height: 34px; }
 .footer__note { width: 100%; font-size: .8rem; opacity: .6; }
 
 .toast {

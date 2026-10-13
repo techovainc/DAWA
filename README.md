@@ -22,6 +22,10 @@ recomposes for wide desktop screens and for portrait phones/tablets:
 Animation pauses when the hero is off-screen or the tab is hidden, and `prefers-reduced-motion`
 gets a single composed still frame.
 
+## Brand
+The official DAWA wordmark lives in `assets/logo/` (PNG + WebP, transparent). App icons are built from it;
+the browser-tab favicons use the "D" alone so they stay legible at 16–48 px.
+
 ## PWA
 `manifest.webmanifest`, `sw.js` (offline app shell; network-first pages, stale-while-revalidate
 assets), install button via `beforeinstallprompt`, maskable and Apple touch icons.

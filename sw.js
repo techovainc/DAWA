@@ -1,5 +1,5 @@
 /* DAWA service worker — offline app shell, stale-while-revalidate for everything else */
-const VERSION = 'dawa-v3';
+const VERSION = 'dawa-v4';
 const SHELL = [
   './',
   'index.html',
@@ -8,7 +8,9 @@ const SHELL = [
   'js/app.js',
   'assets/data/land.json',
   'manifest.webmanifest',
-  'assets/icons/icon.svg',
+  'assets/icons/favicon-32.png',
+  'assets/logo/dawa-logo.webp',
+  'assets/logo/dawa-logo.png',
   'assets/icons/icon-192.png',
   'assets/icons/icon-512.png',
 ];
