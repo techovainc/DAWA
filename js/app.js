@@ -111,7 +111,7 @@
     const body = encodeURIComponent(
       `Name: ${data.name}\nCompany: ${data.company}\nEmail: ${data.email}\nEnquiry: ${data.enquiry}\n\n${data.message}`
     );
-    status.textContent = 'Thank you — opening your email app to send the enquiry…';
+    status.textContent = 'Thank you. Your email app should open with the enquiry ready to send. If it doesn\'t, email trade@dawa.example.';
     window.location.href = `mailto:trade@dawa.example?subject=${encodeURIComponent('Enquiry — ' + data.enquiry)}&body=${body}`;
     form.reset();
   });

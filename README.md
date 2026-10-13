@@ -30,6 +30,16 @@ the browser-tab favicons use the "D" alone so they stay legible at 16–48 px.
 `manifest.webmanifest`, `sw.js` (offline app shell; network-first pages, stale-while-revalidate
 assets), install button via `beforeinstallprompt`, maskable and Apple touch icons.
 
+## React version
+`react/DawaLanding.jsx` is the whole page as one self-contained React 18 component (markup, styles,
+hero engine, logo and globe data embedded). Use it with `import DawaLanding from './DawaLanding'`.
+It is generated from the static site, so after editing `index.html`, `css/`, `js/hero.js` or the
+assets, regenerate it:
+
+```sh
+python3 tools/build-jsx.py
+```
+
 ## Run locally
 Any static server works (service workers need `http://localhost` or HTTPS):
 
