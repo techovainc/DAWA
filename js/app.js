@@ -109,12 +109,18 @@
     }
     const data = Object.fromEntries(new FormData(form));
     const body = encodeURIComponent(
-      `Name: ${data.name}\nCompany: ${data.company}\nEmail: ${data.email}\nMetal: ${data.metal}\n\n${data.message}`
+      `Name: ${data.name}\nCompany: ${data.company}\nEmail: ${data.email}\nEnquiry: ${data.enquiry}\n\n${data.message}`
     );
-    status.textContent = 'Thank you — opening your email app to send the request…';
-    window.location.href = `mailto:desk@dawa.example?subject=${encodeURIComponent('Quote request — ' + data.metal)}&body=${body}`;
+    status.textContent = 'Thank you — opening your email app to send the enquiry…';
+    window.location.href = `mailto:trade@dawa.example?subject=${encodeURIComponent('Enquiry — ' + data.enquiry)}&body=${body}`;
     form.reset();
   });
+
+  // Buttons such as "Request an invitation" preselect the enquiry type
+  const enquirySelect = form.querySelector('[data-enquiry-select]');
+  document.querySelectorAll('[data-enquiry]').forEach((btn) =>
+    btn.addEventListener('click', () => { enquirySelect.value = btn.dataset.enquiry; })
+  );
 
   document.querySelectorAll('[data-year]').forEach((el) => (el.textContent = new Date().getFullYear()));
 })();

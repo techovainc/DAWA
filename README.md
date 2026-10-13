@@ -1,6 +1,10 @@
-# DAWA — Precious Metals PWA landing page
+# DAWA — Wholesale Distribution PWA landing page
 
-Static, dependency-free Progressive Web App landing page for a gold & precious-metals distributor.
+Static, dependency-free Progressive Web App landing page for DAWA, a wholesale distributor of
+precious metals and tobacco that also hosts trade-only partner events.
+
+Sections: animated hero · trade hubs · key figures · product divisions (precious metals, tobacco) ·
+logistics · partner events · how it works · compliance · contact.
 
 ## Animated hero
 The hero artwork is rebuilt from layers so every element moves on its own and the scene
@@ -32,6 +36,7 @@ python3 -m http.server 8000
 Bump `VERSION` in `sw.js` when you deploy changes so clients pick up the new files.
 
 ## Placeholder content
-Company figures, the email address (`desk@dawa.example`) and copy are placeholders. The contact
+Company figures, the email address (`trade@dawa.example`) and copy are placeholders. Review the
+tobacco wording (trade-only, legal age, health warning) against the rules in each market you serve. The contact
 form opens the visitor's email client; connect it to your backend/CRM for production.
 `tools/build-land.cjs` regenerates the coastline data from `world-atlas`.

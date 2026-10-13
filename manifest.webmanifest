@@ -1,7 +1,7 @@
 {
-  "name": "DAWA Precious Metals",
+  "name": "DAWA Wholesale Distribution",
   "short_name": "DAWA",
-  "description": "Investment-grade gold, silver, platinum and palladium — delivered worldwide by air and sea.",
+  "description": "Wholesale distribution of precious metals and tobacco for licensed trade partners, delivered worldwide.",
   "id": "./",
   "start_url": "./?source=pwa",
   "scope": "./",
@@ -18,7 +18,7 @@
     { "src": "assets/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
   ],
   "shortcuts": [
-    { "name": "Request a quote", "url": "./#contact", "icons": [{ "src": "assets/icons/icon-192.png", "sizes": "192x192" }] },
-    { "name": "Our metals", "url": "./#metals", "icons": [{ "src": "assets/icons/icon-192.png", "sizes": "192x192" }] }
+    { "name": "Become a partner", "url": "./#contact", "icons": [{ "src": "assets/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Partner events", "url": "./#events", "icons": [{ "src": "assets/icons/icon-192.png", "sizes": "192x192" }] }
   ]
 }

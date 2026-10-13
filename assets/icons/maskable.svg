@@ -16,7 +16,11 @@
   </defs>
   <rect width="512" height="512" rx="0" fill="url(#bg)"/>
   <rect width="512" height="512" rx="0" fill="url(#glow)"/>
-  <circle cx="256" cy="256" r="140" fill="none" stroke="url(#g)" stroke-width="18"/>
-  <path d="M172 312 L214 208 h84 l42 104 Z" fill="url(#g)"/>
-  <path d="M214 208 h84 l11 27 H203 Z" fill="#fff6d2" opacity=".7"/>
+  <g transform="translate(256 256) scale(5) translate(-32 -32)">
+    <circle cx="32" cy="32" r="28" fill="none" stroke="url(#g)" stroke-width="3.5"/>
+    <ellipse cx="32" cy="32" rx="12" ry="28" fill="none" stroke="url(#g)" stroke-width="2" opacity=".55"/>
+    <path d="M5 32h54" stroke="url(#g)" stroke-width="2" opacity=".55"/>
+    <path d="M22 18h10c8.5 0 14 5.6 14 14s-5.5 14-14 14H22Z" fill="url(#g)"/>
+    <path d="M28 24h4c5 0 8 3 8 8s-3 8-8 8h-4Z" fill="#0b2a63"/>
+  </g>
 </svg>
