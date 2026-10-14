@@ -223,13 +223,18 @@ export default function DawaLanding() {
                       </linearGradient>
                     </defs>
                     {/* pipe */}
+                    {/* slender luxury pipe: tulip bowl, long fine stem, jewelled band */}
                     <g className="acc acc--pipe">
-                      <path d="M94 124 C72 128 46 120 22 106 L18 112 C42 128 70 138 94 136 Z" fill="url(#accGoldH)"/>
-                      <path d="M24 106 L18 112 L12 108 L18 102 Z" fill="#7a4d12"/>
-                      <path d="M86 84 H126 V122 C126 142 116 152 106 152 C96 152 86 142 86 122 Z" fill="url(#accGold)"/>
-                      <ellipse cx="106" cy="84" rx="20" ry="6" fill="#ffeaa6"/>
-                      <ellipse cx="106" cy="85" rx="15" ry="4" fill="#5a3a10"/>
-                      <path d="M93 96 V124 C93 134 97 140 101 143" stroke="#fff6d2" strokeWidth="3" fill="none" opacity=".55" strokeLinecap="round"/>
+                      <path d="M100 140 C78 146 46 136 14 112" stroke="url(#accGoldH)" strokeWidth="5" fill="none" strokeLinecap="round"/>
+                      <path d="M20 117 L8 107" stroke="#7a4d12" strokeWidth="4.2" strokeLinecap="round"/>
+                      <path d="M93 86 H127 C126 110 121 132 113 144 C109 150 102 150 99 144 C92 132 92 110 93 86 Z" fill="url(#accGold)"/>
+                      <ellipse cx="110" cy="86" rx="17" ry="4.6" fill="#ffeaa6"/>
+                      <ellipse cx="110" cy="87" rx="12.5" ry="3" fill="#5a3a10"/>
+                      <path d="M99 96 C98 114 100 130 104 140" stroke="#fff6d2" strokeWidth="2.6" fill="none" opacity=".6" strokeLinecap="round"/>
+                      <path d="M94 104 C104 107 116 107 126 104" stroke="#a8701f" strokeWidth="1.4" fill="none" opacity=".7"/>
+                      <rect x="80" y="137" width="12" height="10" rx="2.5" fill="url(#accGold)" transform="rotate(-14 86 142)"/>
+                      <circle cx="86" cy="142" r="3" fill="#fffdf5"/>
+                      <circle cx="86" cy="142" r="1.4" fill="#cfe9ff"/>
                     </g>
                     {/* steam chalice: water vessel, stem, bowl and draw hose */}
                     <g className="acc acc--chalice">
