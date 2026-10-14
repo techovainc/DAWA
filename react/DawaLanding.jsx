@@ -351,7 +351,7 @@ export default function DawaLanding() {
                 <div className="gallery gallery--wide" data-gallery role="region" aria-roledescription="carousel" aria-label="Photos from DAWA's first private tasting, June 2021">
                   <figure className="gallery__slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 3">
                     <img className="gallery__img" src={GALLERY['tasting-2021-dinner']} alt="Guests seated at a long white-draped table under the trees, with sunflowers and string lights, at DAWA’s first private tasting in June 2021" width="1600" height="900" loading="lazy" decoding="async" />
-                    <figcaption><strong>Dinner under the trees</strong><span>First private tasting · June 2021</span></figcaption>
+                    <figcaption><strong>A Seat At The Table</strong><span>First private tasting · June 2021</span></figcaption>
                   </figure>
                   <figure className="gallery__slide" role="group" aria-roledescription="slide" aria-label="2 of 3" aria-hidden="true">
                     <img className="gallery__img" src={GALLERY['tasting-2021-table']} alt="A bottle in soft focus in the foreground with a row of tasting glasses set along the table" width="1600" height="900" loading="lazy" decoding="async" />
@@ -368,7 +368,7 @@ export default function DawaLanding() {
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
                   </button>
                   <div className="gallery__dots">
-                  <button type="button" className="gallery__dot" aria-label="Show photo 1: Dinner under the trees" aria-current="true"></button>
+                  <button type="button" className="gallery__dot" aria-label="Show photo 1: A Seat At The Table" aria-current="true"></button>
                   <button type="button" className="gallery__dot" aria-label="Show photo 2: The tasting table"></button>
                   <button type="button" className="gallery__dot" aria-label="Show photo 3: A glass in hand"></button>
                   </div>
