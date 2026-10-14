@@ -251,12 +251,26 @@ export default function DawaLanding() {
                         <path d="M191 12 C186 5 195 0 190 -8"/>
                       </g>
                     </g>
-                    {/* 24K gold rolling papers */}
+                    {/* 24K gold king-size rolling papers: fanned gold-leaf sheets over a slim booklet */}
                     <g className="acc acc--papers">
-                      <path d="M262 122 L262 94 Q296 84 330 94 L330 122 Z" fill="url(#accGold)"/>
-                      <path d="M270 96 Q296 89 322 96" stroke="#fff6d2" strokeWidth="1.5" fill="none" opacity=".7"/>
-                      <rect x="250" y="118" width="92" height="54" rx="5" fill="#1f140b" stroke="url(#accGoldH)" strokeWidth="2"/>
-                      <text x="296" y="152" textAnchor="middle" fontFamily="Georgia, serif" fontSize="18" fontWeight="700" letterSpacing="2" fill="#f0c665">24K</text>
+                      <g className="acc-sheets">
+                        <g className="acc-sheet" transform="rotate(-16 300 140)">
+                          <rect x="252" y="96" width="96" height="24" rx="1.5" fill="url(#accGold)"/>
+                          <path d="M258 104 l12 3 l10 -2 l14 4 l12 -3 l16 3 M262 113 l16 -2 l12 3 l18 -2 l14 2" stroke="#fff6d2" strokeWidth=".9" fill="none" opacity=".55"/>
+                        </g>
+                        <g className="acc-sheet" transform="rotate(-7 300 140)">
+                          <rect x="252" y="104" width="96" height="24" rx="1.5" fill="url(#accGoldH)"/>
+                          <path d="M258 112 l14 3 l12 -3 l14 3 l12 -2 l14 2 M260 121 l12 -2 l16 2 l14 -3 l16 2" stroke="#fff6d2" strokeWidth=".9" fill="none" opacity=".55"/>
+                        </g>
+                        <g className="acc-sheet" transform="rotate(1 300 140)">
+                          <rect x="252" y="112" width="96" height="24" rx="1.5" fill="url(#accGold)"/>
+                          <path d="M258 120 l12 2 l14 -3 l12 3 l16 -2 l12 2 M262 129 l14 -2 l12 3 l16 -3 l14 2" stroke="#fff6d2" strokeWidth=".9" fill="none" opacity=".55"/>
+                        </g>
+                      </g>
+                      <rect x="250" y="138" width="100" height="36" rx="4" fill="#1f140b" stroke="url(#accGoldH)" strokeWidth="2"/>
+                      <path d="M250 147 H350" stroke="url(#accGoldH)" strokeWidth="1" opacity=".6"/>
+                      <text x="300" y="164" textAnchor="middle" fontFamily="Georgia, serif" fontSize="12" fontWeight="700" letterSpacing="2" fill="#f0c665">24K GOLD</text>
+                      <text x="300" y="171" textAnchor="middle" fontFamily="system-ui, sans-serif" fontSize="4.6" letterSpacing="1.6" fill="#c9a35a">KING SIZE · GOLD LEAF</text>
                     </g>
                     <g className="acc-sparks" fill="#fffbe6">
                       <path className="acc-spark" d="M60 52 l2.5 7 7 2.5 -7 2.5 -2.5 7 -2.5 -7 -7 -2.5 7 -2.5 Z"/>
@@ -2172,6 +2186,8 @@ p { margin: 0 0 1em; }
 .acc-steam path:nth-child(2) { animation-delay: -1.2s; }
 .acc-steam path:nth-child(3) { animation-delay: -2.4s; }
 @keyframes steam { 0% { opacity: 0; transform: translateY(6px); } 30% { opacity: .7; } 100% { opacity: 0; transform: translateY(-14px); } }
+.acc-sheets { transform-box: fill-box; transform-origin: 10% 100%; animation: sheetFan 5s ease-in-out infinite; }
+@keyframes sheetFan { 0%, 100% { transform: rotate(0deg); } 50% { transform: rotate(-3deg); } }
 .acc-spark { transform-box: fill-box; transform-origin: center; animation: twinkle 3.2s ease-in-out infinite; }
 .acc-spark:nth-child(2) { animation-delay: -1.1s; }
 .acc-spark:nth-child(3) { animation-delay: -2.2s; }
