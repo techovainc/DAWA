@@ -391,7 +391,7 @@ export default function DawaLanding() {
                 <ul className="wine__facts">
                   <li><strong>1</strong><span>Batch a year</span></li>
                   <li><strong>8</strong><span>Months in the making</span></li>
-                  <li><strong>0</strong><span>Bottles sold in stores</span></li>
+                  <li><strong>0</strong><span>Bottles ever sold</span></li>
                 </ul>
                 <p className="wine__note">Served only to adult guests at DAWA™ events, where local law allows. Please enjoy responsibly.</p>
               </div>
