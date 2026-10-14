@@ -385,7 +385,7 @@ export default function DawaLanding() {
               <div className="wine__body">
                 <p className="kicker">Events-only signature</p>
                 <h3 className="wine__title" id="wine-title">DAWA<sup className="tm">™</sup> Reserve</h3>
-                <p className="wine__lead">Our signature brew, crafted from barks gathered in the Amazon rainforest.
+                <p className="wine__lead">Our signature brew, naturally fermented from barks gathered in the Amazon rainforest.
                   It is brewed just once a year over eight patient months, and it is never sold —
                   you can only taste it at a DAWA™ partner event.</p>
                 <ul className="wine__facts">
