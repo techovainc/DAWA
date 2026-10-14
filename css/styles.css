@@ -647,6 +647,7 @@ p { margin: 0 0 1em; }
   box-shadow: 0 30px 60px -30px rgba(0, 0, 0, .8);
 }
 .gallery--wide .gallery__img { object-fit: cover; padding: 0; }
+.gallery__img--focus-right { object-position: 68% 50%; }
 @media (max-width: 640px) {
   .events__gallery { aspect-ratio: 4 / 3.4; }
 }
