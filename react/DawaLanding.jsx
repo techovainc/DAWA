@@ -214,7 +214,7 @@ export default function DawaLanding() {
 
               <article className="division division--accessories reveal">
                 <div className="division__visual division__visual--gallery">
-                  <div className="gallery" data-gallery role="region" aria-roledescription="carousel" aria-label="Gold smoking accessories photos">
+                  <div className="gallery" data-gallery role="region" aria-roledescription="carousel" aria-label="Golden Lounge Accessories photos">
                     <figure className="gallery__slide is-active" style={{ '--slide-bg': '#2a1f0a' }} role="group" aria-roledescription="slide" aria-label="1 of 4">
                       <img className="gallery__backdrop" src={GALLERY['steam-chalice']} alt="" aria-hidden="true" />
                       <img className="gallery__img" src={GALLERY['steam-chalice']} alt="Gold steam chalice with engraved sun emblem, coals and a white hose with gold wraps" width="720" height="720" decoding="async" />
@@ -248,7 +248,7 @@ export default function DawaLanding() {
                 </div>
                 <div className="division__body">
                   <p className="division__tag">Division 02</p>
-                  <h3>Gold smoking accessories</h3>
+                  <h3>Golden Lounge Accessories</h3>
                   <p>Steam chalices, pipes, 24K gold rolling papers and more, finished in genuine 18K to 24K
                     gold. Statement pieces for luxury retailers, lounges and collectors.</p>
                   <ul className="chips">
@@ -434,7 +434,7 @@ export default function DawaLanding() {
               <ul className="checks">
                 <li>Conflict-free metals with full chain-of-custody records</li>
                 <li>Hallmarking and fineness certificates for every gold accessory</li>
-                <li>Smoking accessories sold to age-verified adult trade buyers only</li>
+                <li>Golden Lounge Accessories sold to age-verified adult trade buyers only</li>
                 <li>Rigorous KYC/AML screening of every counterparty</li>
               </ul>
             </header>
@@ -465,7 +465,7 @@ export default function DawaLanding() {
                 <label>Enquiry
                   <select name="enquiry" value={enquiry} onChange={(e) => setEnquiry(e.target.value)}>
                     <option>Precious metals</option>
-                    <option>Gold smoking accessories</option>
+                    <option>Golden Lounge Accessories</option>
                     <option>Partner event invitation</option>
                     <option>Logistics only</option>
                   </select>
@@ -486,7 +486,7 @@ export default function DawaLanding() {
             <span className="brand__tagline">Wholesale Distribution</span>
           </a>
           <p>© {new Date().getFullYear()} DAWA CULTIVATION, a New York State Limited Liability Company. All rights reserved.</p>
-          <p className="footer__note">Trade customers only. Smoking accessories are sold only to adults of legal age. DAWA does not sell, supply or ship tobacco or any smokable product. DAWA Wine is served only at private DAWA events to guests of legal drinking age; please enjoy responsibly. Prices and availability are subject to market conditions.</p>
+          <p className="footer__note">Trade customers only. Golden Lounge Accessories are sold only to adults of legal age. DAWA does not sell, supply or ship tobacco or any smokable product. DAWA Wine is served only at private DAWA events to guests of legal drinking age; please enjoy responsibly. Prices and availability are subject to market conditions.</p>
         </div>
       </footer>
 

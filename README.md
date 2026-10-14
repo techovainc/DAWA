@@ -1,9 +1,9 @@
 # DAWA — Wholesale Distribution PWA landing page
 
 Static, dependency-free Progressive Web App landing page for DAWA, a wholesale distributor of
-precious metals and solid-gold (18K–24K) smoking accessories that also hosts trade-only partner events.
+precious metals and 18K–24K Golden Lounge Accessories that also hosts trade-only partner events.
 
-Sections: animated hero · trade hubs · key figures · product divisions (precious metals, gold smoking accessories) ·
+Sections: animated hero · trade hubs · key figures · product divisions (precious metals, Golden Lounge Accessories) ·
 logistics · partner events (incl. DAWA Wine, the events-only signature tonic) · how it works · compliance · contact.
 
 ## Animated hero
@@ -58,6 +58,6 @@ Bump `VERSION` in `sw.js` when you deploy changes so clients pick up the new fil
 
 ## Placeholder content
 Company figures, the email address (`trade@dawa.example`) and copy are placeholders. Review the
-smoking-accessory wording (adults only, no tobacco supplied) against the rules in each market you serve. The contact
+Golden Lounge Accessories wording (adults only, no tobacco supplied) against the rules in each market you serve. The contact
 form opens the visitor's email client; connect it to your backend/CRM for production.
 `tools/build-land.cjs` regenerates the coastline data from `world-atlas`.
