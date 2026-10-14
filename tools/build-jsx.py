@@ -15,6 +15,7 @@ html = (ROOT / 'index.html').read_text()
 css = (ROOT / 'css/styles.css').read_text()
 hero_js = (ROOT / 'js/hero.js').read_text()
 logo_b64 = base64.b64encode((ROOT / 'assets/logo/dawa-logo.webp').read_bytes()).decode()
+sfra_b64 = base64.b64encode((ROOT / 'assets/logo/sfra-mark-engraved.webp').read_bytes()).decode()
 land = json.loads((ROOT / 'assets/data/land.json').read_text())
 gallery_js = (ROOT / 'js/gallery.js').read_text()
 gallery_imgs = {f.stem: base64.b64encode(f.read_bytes()).decode()
@@ -92,6 +93,7 @@ for src in ('srcSet="assets/logo/dawa-logo.webp"', 'src="assets/logo/dawa-logo.p
 page_jsx = re.sub(r'\s*<source srcSet=\{LOGO\} type="image/webp" />', '', page_jsx)
 # product photos are embedded as data URIs too
 page_jsx = re.sub(r'src="assets/gallery/([\w-]+)\.webp"', r"src={GALLERY['\1']}", page_jsx)
+page_jsx = page_jsx.replace('src="assets/logo/sfra-mark-engraved.webp"', 'src={SFRA}')
 assert 'assets/gallery' not in page_jsx
 
 # ------------------------------------------------------------- slideshow engine
@@ -299,6 +301,9 @@ function mountHero(root, landRings) {{
 
 /* ------------------------------------------------------------------ ASSETS */
 const LOGO = 'data:image/webp;base64,{logo_b64}';
+
+/** Sfra mark stamped on the gold bars. */
+const SFRA = 'data:image/webp;base64,{sfra_b64}';
 
 /** Product photos for the slideshow. */
 const GALLERY = {{
