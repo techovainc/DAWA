@@ -485,7 +485,7 @@ export default function DawaLanding() {
               <img className="brand__logo" src={LOGO} alt="DAWA" width="720" height="156" loading="lazy" />
             <span className="brand__tagline">Wholesale Distribution</span>
           </a>
-          <p>© {new Date().getFullYear()} DAWA Wholesale Distribution. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} DAWA CULTIVATION, a New York State Limited Liability Company. All rights reserved.</p>
           <p className="footer__note">Trade customers only. Smoking accessories are sold only to adults of legal age. DAWA does not sell, supply or ship tobacco or any smokable product. DAWA Wine is served only at private DAWA events to guests of legal drinking age; please enjoy responsibly. Prices and availability are subject to market conditions.</p>
         </div>
       </footer>
