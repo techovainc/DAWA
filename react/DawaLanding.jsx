@@ -223,18 +223,22 @@ export default function DawaLanding() {
                       </linearGradient>
                     </defs>
                     {/* pipe */}
-                    {/* slender luxury pipe: tulip bowl, long fine stem, jewelled band */}
+                    {/* churchwarden pipe: bent bowl with engraved rim, twisted band, long sweeping stem */}
                     <g className="acc acc--pipe">
-                      <path d="M100 140 C78 146 46 136 14 112" stroke="url(#accGoldH)" strokeWidth="5" fill="none" strokeLinecap="round"/>
-                      <path d="M20 117 L8 107" stroke="#7a4d12" strokeWidth="4.2" strokeLinecap="round"/>
-                      <path d="M93 86 H127 C126 110 121 132 113 144 C109 150 102 150 99 144 C92 132 92 110 93 86 Z" fill="url(#accGold)"/>
-                      <ellipse cx="110" cy="86" rx="17" ry="4.6" fill="#ffeaa6"/>
-                      <ellipse cx="110" cy="87" rx="12.5" ry="3" fill="#5a3a10"/>
-                      <path d="M99 96 C98 114 100 130 104 140" stroke="#fff6d2" strokeWidth="2.6" fill="none" opacity=".6" strokeLinecap="round"/>
-                      <path d="M94 104 C104 107 116 107 126 104" stroke="#a8701f" strokeWidth="1.4" fill="none" opacity=".7"/>
-                      <rect x="80" y="137" width="12" height="10" rx="2.5" fill="url(#accGold)" transform="rotate(-14 86 142)"/>
-                      <circle cx="86" cy="142" r="3" fill="#fffdf5"/>
-                      <circle cx="86" cy="142" r="1.4" fill="#cfe9ff"/>
+                      <path d="M80 140 C104 120 124 74 136 20 L143 22 C132 76 112 124 86 146 Z" fill="url(#accGoldH)"/>
+                      <path d="M136 20 L143 22 L144 17 L137 15 Z" fill="#7a4d12"/>
+                      <path d="M126 58 C132 44 135 32 137 22" stroke="#fff6d2" strokeWidth="1.4" fill="none" opacity=".6" strokeLinecap="round"/>
+                      <path d="M20 122 C18 142 28 160 47 162 C60 163 72 156 82 146 L88 140 L80 131 C72 135 63 128 60 109 Z" fill="url(#accGold)"/>
+                      <path d="M28 132 C29 146 36 154 46 156" stroke="#fff6d2" strokeWidth="2.6" fill="none" opacity=".55" strokeLinecap="round"/>
+                      <g transform="rotate(-47 84 137)">
+                        <rect x="77" y="133" width="14" height="8" rx="1.5" fill="url(#accGoldH)"/>
+                        <path d="M79 133 l3 8 M83 133 l3 8 M87 133 l3 8" stroke="#7a4d12" strokeWidth="1" opacity=".7"/>
+                      </g>
+                      <g transform="rotate(-18 40 116)">
+                        <ellipse cx="40" cy="116" rx="21" ry="8.5" fill="#ffeaa6"/>
+                        <ellipse cx="40" cy="116" rx="21" ry="8.5" fill="none" stroke="#a8701f" strokeWidth="1.2" strokeDasharray="1.6 1.4" opacity=".8"/>
+                        <ellipse cx="40" cy="116.6" rx="13" ry="5" fill="#1a1006"/>
+                      </g>
                     </g>
                     {/* steam chalice: water vessel, stem, bowl and draw hose */}
                     <g className="acc acc--chalice">
