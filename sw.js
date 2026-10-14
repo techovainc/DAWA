@@ -1,11 +1,16 @@
 /* DAWA service worker — offline app shell, stale-while-revalidate for everything else */
-const VERSION = 'dawa-v5';
+const VERSION = 'dawa-v6';
 const SHELL = [
   './',
   'index.html',
   'css/styles.css',
   'js/hero.js',
+  'js/gallery.js',
   'js/app.js',
+  'assets/gallery/steam-chalice.webp',
+  'assets/gallery/gold-trim-pipe.webp',
+  'assets/gallery/gold-papers-pack.webp',
+  'assets/gallery/gold-cone.webp',
   'assets/data/land.json',
   'manifest.webmanifest',
   'assets/icons/favicon-32.png',

@@ -22,6 +22,13 @@ recomposes for wide desktop screens and for portrait phones/tablets:
 Animation pauses when the hero is off-screen or the tab is hidden, and `prefers-reduced-motion`
 gets a single composed still frame.
 
+## Product photo slideshow
+The accessories card shows real product photos from `assets/gallery/` (WebP) in a slideshow
+(`js/gallery.js`: crossfade, autoplay that pauses on hover/focus/off-screen, arrows, dots, swipe,
+keyboard, off under reduced motion). To add a photo: save it as WebP in `assets/gallery/`, copy one
+`<figure class="gallery__slide">` block in `index.html` plus a matching dot button, add the file to
+`sw.js`, then run `python3 tools/build-jsx.py`.
+
 ## Brand
 The official DAWA wordmark lives in `assets/logo/` (PNG + WebP, transparent). App icons are built from it;
 the browser-tab favicons use the "D" alone so they stay legible at 16–48 px.

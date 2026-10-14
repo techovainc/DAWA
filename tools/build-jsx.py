@@ -16,6 +16,9 @@ css = (ROOT / 'css/styles.css').read_text()
 hero_js = (ROOT / 'js/hero.js').read_text()
 logo_b64 = base64.b64encode((ROOT / 'assets/logo/dawa-logo.webp').read_bytes()).decode()
 land = json.loads((ROOT / 'assets/data/land.json').read_text())
+gallery_js = (ROOT / 'js/gallery.js').read_text()
+gallery_imgs = {f.stem: base64.b64encode(f.read_bytes()).decode()
+                for f in sorted((ROOT / 'assets/gallery').glob('*.webp'))}
 
 
 def must_replace(src, old, new, count=1):
@@ -87,6 +90,12 @@ for src in ('srcSet="assets/logo/dawa-logo.webp"', 'src="assets/logo/dawa-logo.p
     attr = src.split('=')[0]
     page_jsx = page_jsx.replace(src, f'{attr}={{LOGO}}')
 page_jsx = re.sub(r'\s*<source srcSet=\{LOGO\} type="image/webp" />', '', page_jsx)
+# product photos are embedded as data URIs too
+page_jsx = re.sub(r'src="assets/gallery/([\w-]+)\.webp"', r"src={GALLERY['\1']}", page_jsx)
+assert 'assets/gallery' not in page_jsx
+
+# ------------------------------------------------------------- slideshow engine
+gallery_fn = gallery_js[gallery_js.index('function mountGallery'):gallery_js.index("document.querySelectorAll('[data-gallery]')")].rstrip()
 page_jsx = re.sub(r'\s*</?picture>', '', page_jsx)
 
 # ------------------------------------------------------------- hero engine
@@ -148,6 +157,12 @@ export default function DawaLanding() {{
   const [status, setStatus] = useState('');
   const [invalid, setInvalid] = useState({{}});
   const [toast, setToast] = useState('');
+
+  // Product photo slideshows
+  useEffect(() => {{
+    const unmount = [...rootRef.current.querySelectorAll('[data-gallery]')].map(mountGallery);
+    return () => unmount.forEach((fn) => fn());
+  }}, []);
 
   // Nav background once the page scrolls; Escape closes the mobile menu
   useEffect(() => {{
@@ -279,8 +294,16 @@ function mountHero(root, landRings) {{
 {indent(engine, 2)}
 }}
 
+/* ------------------------------------------------------------------ SLIDESHOW */
+{gallery_fn}
+
 /* ------------------------------------------------------------------ ASSETS */
 const LOGO = 'data:image/webp;base64,{logo_b64}';
+
+/** Product photos for the slideshow. */
+const GALLERY = {{
+{chr(10).join(f"  '{k}': 'data:image/webp;base64,{v}'," for k, v in gallery_imgs.items())}
+}};
 
 /** Natural Earth land rings (lon, lat pairs) for the globe texture. */
 const LAND_RINGS = {json.dumps(land, separators=(',', ':'))};
