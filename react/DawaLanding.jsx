@@ -208,7 +208,7 @@ export default function DawaLanding() {
 
               <article className="division division--accessories reveal">
                 <div className="division__visual" aria-hidden="true">
-                  <svg className="accessories" viewBox="0 0 360 200">
+                  <svg className="accessories" viewBox="0 -28 360 228">
                     <defs>
                       <linearGradient id="accGold" x1="0" y1="0" x2="1" y2="1">
                         <stop offset="0" stopColor="#fff4c4"/>
@@ -231,16 +231,25 @@ export default function DawaLanding() {
                       <ellipse cx="106" cy="85" rx="15" ry="4" fill="#5a3a10"/>
                       <path d="M93 96 V124 C93 134 97 140 101 143" stroke="#fff6d2" strokeWidth="3" fill="none" opacity=".55" strokeLinecap="round"/>
                     </g>
-                    {/* chalice */}
+                    {/* steam chalice: water vessel, stem, bowl and draw hose */}
                     <g className="acc acc--chalice">
-                      <path d="M142 34 H218 C218 82 204 104 180 108 C156 104 142 82 142 34 Z" fill="url(#accGold)"/>
-                      <ellipse cx="180" cy="34" rx="38" ry="8" fill="#ffeaa6"/>
-                      <ellipse cx="180" cy="35" rx="32" ry="5" fill="#b27a22"/>
-                      <path d="M152 50 C154 74 162 92 174 100" stroke="#fff6d2" strokeWidth="3" fill="none" opacity=".6" strokeLinecap="round"/>
-                      <rect x="174" y="106" width="12" height="46" fill="url(#accGoldH)"/>
-                      <ellipse cx="180" cy="126" rx="11" ry="5" fill="url(#accGold)"/>
-                      <path d="M148 176 C156 160 204 160 212 176 Z" fill="url(#accGold)"/>
-                      <ellipse cx="180" cy="176" rx="32" ry="6" fill="url(#accGoldH)"/>
+                      <path d="M211 132 C236 130 244 104 240 74" stroke="url(#accGoldH)" strokeWidth="7" fill="none" strokeLinecap="round"/>
+                      <rect x="234" y="62" width="11" height="14" rx="3" fill="url(#accGold)"/>
+                      <rect x="171" y="40" width="18" height="70" rx="3" fill="url(#accGoldH)"/>
+                      <ellipse cx="180" cy="62" rx="12" ry="4" fill="url(#accGold)"/>
+                      <ellipse cx="180" cy="86" rx="12" ry="4" fill="url(#accGold)"/>
+                      <path d="M156 18 H204 L195 44 H165 Z" fill="url(#accGold)"/>
+                      <ellipse cx="180" cy="18" rx="24" ry="5.5" fill="#ffeaa6"/>
+                      <ellipse cx="180" cy="19" rx="18" ry="3.5" fill="#5a3a10"/>
+                      <rect x="166" y="104" width="28" height="14" rx="4" fill="url(#accGold)"/>
+                      <path d="M156 116 C138 128 134 158 150 172 C162 182 198 182 210 172 C226 158 222 128 204 116 Z" fill="url(#accGold)"/>
+                      <ellipse cx="180" cy="176" rx="30" ry="5" fill="url(#accGoldH)"/>
+                      <path d="M152 134 C147 148 149 160 157 168" stroke="#fff6d2" strokeWidth="3" fill="none" opacity=".6" strokeLinecap="round"/>
+                      <g className="acc-steam" fill="none" stroke="#fff8e6" strokeLinecap="round" strokeWidth="2.4">
+                        <path d="M172 12 C166 4 176 -2 170 -10"/>
+                        <path d="M182 12 C188 2 178 -4 184 -14"/>
+                        <path d="M191 12 C186 5 195 0 190 -8"/>
+                      </g>
                     </g>
                     {/* 24K gold rolling papers */}
                     <g className="acc acc--papers">
@@ -259,10 +268,10 @@ export default function DawaLanding() {
                 <div className="division__body">
                   <p className="division__tag">Division 02</p>
                   <h3>Gold smoking accessories</h3>
-                  <p>Chalices, pipes, 24K gold rolling papers and more, all crafted in genuine 18K to 24K
+                  <p>Steam chalices, pipes, 24K gold rolling papers and more, all crafted in genuine 18K to 24K
                     gold. Hallmarked statement pieces for luxury retailers, lounges and collectors.</p>
                   <ul className="chips">
-                    <li>Gold chalices</li><li>Gold pipes</li>
+                    <li>Gold steam chalices</li><li>Gold pipes</li>
                     <li>24K gold rolling papers</li><li>Custom pieces</li>
                   </ul>
                 </div>
@@ -2159,6 +2168,10 @@ p { margin: 0 0 1em; }
 .acc--chalice { animation-delay: -2s; }
 .acc--papers { animation-delay: -4s; }
 @keyframes accFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+.acc-steam path { opacity: 0; animation: steam 3.6s ease-out infinite; }
+.acc-steam path:nth-child(2) { animation-delay: -1.2s; }
+.acc-steam path:nth-child(3) { animation-delay: -2.4s; }
+@keyframes steam { 0% { opacity: 0; transform: translateY(6px); } 30% { opacity: .7; } 100% { opacity: 0; transform: translateY(-14px); } }
 .acc-spark { transform-box: fill-box; transform-origin: center; animation: twinkle 3.2s ease-in-out infinite; }
 .acc-spark:nth-child(2) { animation-delay: -1.1s; }
 .acc-spark:nth-child(3) { animation-delay: -2.2s; }
