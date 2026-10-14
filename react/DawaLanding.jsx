@@ -206,35 +206,64 @@ export default function DawaLanding() {
                 </div>
               </article>
 
-              <article className="division division--tobacco reveal">
+              <article className="division division--accessories reveal">
                 <div className="division__visual" aria-hidden="true">
-                  <svg className="leaf" viewBox="0 0 200 200">
+                  <svg className="accessories" viewBox="0 0 360 200">
                     <defs>
-                      <linearGradient id="leafGrad" x1="0" y1="0" x2="1" y2="1">
-                        <stop offset="0" stopColor="#d9a35a"/>
-                        <stop offset=".55" stopColor="#9c5f26"/>
-                        <stop offset="1" stopColor="#5c3412"/>
+                      <linearGradient id="accGold" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0" stopColor="#fff4c4"/>
+                        <stop offset=".35" stopColor="#f0c665"/>
+                        <stop offset=".7" stopColor="#c98d2a"/>
+                        <stop offset="1" stopColor="#8f5c14"/>
+                      </linearGradient>
+                      <linearGradient id="accGoldH" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="0" stopColor="#a8701f"/>
+                        <stop offset=".45" stopColor="#ffeaa6"/>
+                        <stop offset="1" stopColor="#b27a22"/>
                       </linearGradient>
                     </defs>
-                    <path d="M100 12 C150 40 172 95 150 150 C138 178 116 190 100 192 C84 190 62 178 50 150 C28 95 50 40 100 12 Z" fill="url(#leafGrad)"/>
-                    <path d="M100 20 V186" stroke="#f3d9a8" strokeWidth="2.5" opacity=".7"/>
-                    <g stroke="#f3d9a8" strokeWidth="1.4" opacity=".45" fill="none">
-                      <path d="M100 55 C120 50 135 55 148 66"/><path d="M100 55 C80 50 65 55 52 66"/>
-                      <path d="M100 90 C124 84 142 92 156 104"/><path d="M100 90 C76 84 58 92 44 104"/>
-                      <path d="M100 125 C122 120 138 128 150 140"/><path d="M100 125 C78 120 62 128 50 140"/>
-                      <path d="M100 158 C114 155 126 160 134 168"/><path d="M100 158 C86 155 74 160 66 168"/>
+                    {/* pipe */}
+                    <g className="acc acc--pipe">
+                      <path d="M94 124 C72 128 46 120 22 106 L18 112 C42 128 70 138 94 136 Z" fill="url(#accGoldH)"/>
+                      <path d="M24 106 L18 112 L12 108 L18 102 Z" fill="#7a4d12"/>
+                      <path d="M86 84 H126 V122 C126 142 116 152 106 152 C96 152 86 142 86 122 Z" fill="url(#accGold)"/>
+                      <ellipse cx="106" cy="84" rx="20" ry="6" fill="#ffeaa6"/>
+                      <ellipse cx="106" cy="85" rx="15" ry="4" fill="#5a3a10"/>
+                      <path d="M93 96 V124 C93 134 97 140 101 143" stroke="#fff6d2" strokeWidth="3" fill="none" opacity=".55" strokeLinecap="round"/>
+                    </g>
+                    {/* chalice */}
+                    <g className="acc acc--chalice">
+                      <path d="M142 34 H218 C218 82 204 104 180 108 C156 104 142 82 142 34 Z" fill="url(#accGold)"/>
+                      <ellipse cx="180" cy="34" rx="38" ry="8" fill="#ffeaa6"/>
+                      <ellipse cx="180" cy="35" rx="32" ry="5" fill="#b27a22"/>
+                      <path d="M152 50 C154 74 162 92 174 100" stroke="#fff6d2" strokeWidth="3" fill="none" opacity=".6" strokeLinecap="round"/>
+                      <rect x="174" y="106" width="12" height="46" fill="url(#accGoldH)"/>
+                      <ellipse cx="180" cy="126" rx="11" ry="5" fill="url(#accGold)"/>
+                      <path d="M148 176 C156 160 204 160 212 176 Z" fill="url(#accGold)"/>
+                      <ellipse cx="180" cy="176" rx="32" ry="6" fill="url(#accGoldH)"/>
+                    </g>
+                    {/* 24K gold rolling papers */}
+                    <g className="acc acc--papers">
+                      <path d="M262 122 L262 94 Q296 84 330 94 L330 122 Z" fill="url(#accGold)"/>
+                      <path d="M270 96 Q296 89 322 96" stroke="#fff6d2" strokeWidth="1.5" fill="none" opacity=".7"/>
+                      <rect x="250" y="118" width="92" height="54" rx="5" fill="#1f140b" stroke="url(#accGoldH)" strokeWidth="2"/>
+                      <text x="296" y="152" textAnchor="middle" fontFamily="Georgia, serif" fontSize="18" fontWeight="700" letterSpacing="2" fill="#f0c665">24K</text>
+                    </g>
+                    <g className="acc-sparks" fill="#fffbe6">
+                      <path className="acc-spark" d="M60 52 l2.5 7 7 2.5 -7 2.5 -2.5 7 -2.5 -7 -7 -2.5 7 -2.5 Z"/>
+                      <path className="acc-spark" d="M232 40 l2 5.5 5.5 2 -5.5 2 -2 5.5 -2 -5.5 -5.5 -2 5.5 -2 Z"/>
+                      <path className="acc-spark" d="M318 70 l1.8 5 5 1.8 -5 1.8 -1.8 5 -1.8 -5 -5 -1.8 5 -1.8 Z"/>
                     </g>
                   </svg>
-                  <div className="cigar"><span className="cigar__band">DAWA</span></div>
                 </div>
                 <div className="division__body">
                   <p className="division__tag">Division 02</p>
-                  <h3>Tobacco</h3>
-                  <p>Premium and mainstream tobacco brands for licensed wholesalers, duty-free
-                    operators and retail chains — with duty, excise and labelling handled per market.</p>
+                  <h3>Gold smoking accessories</h3>
+                  <p>Chalices, pipes, 24K gold rolling papers and more, all crafted in genuine 18K to 24K
+                    gold. Hallmarked statement pieces for luxury retailers, lounges and collectors.</p>
                   <ul className="chips">
-                    <li>Premium cigars</li><li>Cigarettes</li>
-                    <li>Pipe &amp; rolling tobacco</li><li>Shisha tobacco</li>
+                    <li>Gold chalices</li><li>Gold pipes</li>
+                    <li>24K gold rolling papers</li><li>Custom pieces</li>
                   </ul>
                 </div>
               </article>
@@ -248,7 +277,7 @@ export default function DawaLanding() {
             <header className="section__head section__head--left reveal">
               <p className="kicker">Logistics</p>
               <h2>Air when it's urgent.<br />Sea when it's heavy.</h2>
-              <p>We plan every consignment door to door: secure collection, customs and excise
+              <p>We plan every consignment door to door: secure collection, customs
                 clearance, specialist insurance and live tracking from producer to your warehouse.</p>
               <a className="btn btn--gold" href="#contact">Plan a shipment</a>
             </header>
@@ -266,14 +295,14 @@ export default function DawaLanding() {
                   <svg viewBox="0 0 24 24"><path d="M3 15h18l-2.5 4.5H5.5L3 15Zm3-1V9h5v5m1 0V6h5v8M4 21c1.3 0 1.3-.8 2.7-.8S8 21 9.3 21s1.3-.8 2.7-.8 1.3.8 2.7.8 1.3-.8 2.6-.8 1.4.8 2.7.8" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" strokeLinecap="round"/></svg>
                 </div>
                 <h3>Sea freight</h3>
-                <p>Sealed, climate-monitored containers for full tobacco loads and bulk silver.</p>
+                <p>Sealed, monitored containers for bulk silver and large accessory consignments.</p>
               </article>
               <article className="feature reveal">
                 <div className="feature__icon">
                   <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2" fill="none" stroke="currentColor" strokeWidth="1.6"/><circle cx="12" cy="12" r="3.5" fill="none" stroke="currentColor" strokeWidth="1.6"/><path d="M12 8.5V7m0 10v-1.5M15.5 12H17M7 12h1.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"/></svg>
                 </div>
                 <h3>Vaults &amp; bonded storage</h3>
-                <p>Allocated vaulting for metals; bonded, humidity-controlled warehousing for tobacco.</p>
+                <p>Allocated vaulting for metals and high-security storage for finished gold pieces.</p>
               </article>
               <article className="feature reveal">
                 <div className="feature__icon">
@@ -307,10 +336,10 @@ export default function DawaLanding() {
               </article>
               <article className="event reveal">
                 <div className="event__icon">
-                  <svg viewBox="0 0 24 24"><path d="M3 15h14a2 2 0 0 0 0-4H3v4Z" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round"/><path d="M13 11v4M20 9c0-2-2-2-2-4M22 9c0-2-2-2-2-4" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M6.5 4h11l3.5 5-9 11L3 9l3.5-5Z" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round"/><path d="M3 9h18M9.5 4 8 9l4 11 4-11-1.5-5" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round"/></svg>
                 </div>
-                <h3>Tobacco lounges</h3>
-                <p>Guided cigar and tobacco sessions with master blenders. Adult trade guests only, where local law allows.</p>
+                <h3>Gold atelier sessions</h3>
+                <p>Handle our chalices, pipes and 24K papers up close, check the hallmarks and meet the goldsmiths behind them.</p>
               </article>
               <article className="event reveal">
                 <div className="event__icon">
@@ -414,7 +443,7 @@ export default function DawaLanding() {
               <li className="step reveal"><span className="step__n">01</span><h3>Enquire</h3><p>Tell us the products, volumes and destination. We return a quote within one business day.</p></li>
               <li className="step reveal"><span className="step__n">02</span><h3>Onboard</h3><p>KYC/AML checks and trade-licence verification, with a dedicated account manager.</p></li>
               <li className="step reveal"><span className="step__n">03</span><h3>Experience</h3><p>Join a partner event or receive trade samples where permitted, then confirm your order.</p></li>
-              <li className="step reveal"><span className="step__n">04</span><h3>Deliver</h3><p>Insured air or sea transport with duty and excise documents, tracked end to end.</p></li>
+              <li className="step reveal"><span className="step__n">04</span><h3>Deliver</h3><p>Insured air or sea transport with full customs documents, tracked end to end.</p></li>
             </ol>
           </div>
         </section>
@@ -432,8 +461,8 @@ export default function DawaLanding() {
               <h2>Responsible trade, documented at every step</h2>
               <ul className="checks">
                 <li>Conflict-free metals with full chain-of-custody records</li>
-                <li>Tobacco supplied only to licensed, age-verified trade buyers</li>
-                <li>Duty, excise and market-specific labelling handled for every shipment</li>
+                <li>Hallmarking and fineness certificates for every gold accessory</li>
+                <li>Smoking accessories sold to age-verified adult trade buyers only</li>
                 <li>Rigorous KYC/AML screening of every counterparty</li>
               </ul>
             </header>
@@ -464,13 +493,13 @@ export default function DawaLanding() {
                 <label>Enquiry
                   <select name="enquiry" value={enquiry} onChange={(e) => setEnquiry(e.target.value)}>
                     <option>Precious metals</option>
-                    <option>Tobacco</option>
+                    <option>Gold smoking accessories</option>
                     <option>Partner event invitation</option>
                     <option>Logistics only</option>
                   </select>
                 </label>
               </div>
-              <label>Details<textarea name="message" rows="4" placeholder="e.g. 25 × 1 kg gold bars to Zurich by air, or 2 × 40ft containers of cigarettes to Dubai"></textarea></label>
+              <label>Details<textarea name="message" rows="4" placeholder="e.g. 25 × 1 kg gold bars to Zurich by air, or 200 boxes of 24K gold rolling papers to Dubai"></textarea></label>
               <button className="btn btn--gold btn--block" type="submit">Send enquiry</button>
               <p className="form__status" role="status" aria-live="polite">{status}</p>
             </form>
@@ -485,7 +514,7 @@ export default function DawaLanding() {
             <span className="brand__tagline">Wholesale Distribution</span>
           </a>
           <p>© {new Date().getFullYear()} DAWA Wholesale Distribution. All rights reserved.</p>
-          <p className="footer__note">Trade customers only. Tobacco products are supplied exclusively to licensed businesses and are not sold to consumers or to anyone under the legal age. Smoking seriously harms your health. DAWA Wine is served only at private DAWA events to guests of legal drinking age; please enjoy responsibly. Prices and availability are subject to market conditions.</p>
+          <p className="footer__note">Trade customers only. Smoking accessories are sold only to adults of legal age. DAWA does not sell, supply or ship tobacco or any smokable product. DAWA Wine is served only at private DAWA events to guests of legal drinking age; please enjoy responsibly. Prices and availability are subject to market conditions.</p>
         </div>
       </footer>
 
@@ -701,8 +730,8 @@ const Hero = memo(function Hero() {
           </p>
           <h1 className="hero__title">Premium goods,<br /><span className="gold-text">delivered worldwide.</span></h1>
           <p className="hero__lead">
-            DAWA supplies precious metals and tobacco to licensed trade partners — sourced from
-            trusted producers, fully insured and shipped by air and sea. Then we invite you to
+            DAWA supplies precious metals and solid-gold accessories to trade partners — sourced from
+            trusted refiners and goldsmiths, fully insured and shipped by air and sea. Then we invite you to
             experience them first-hand, with a glass of DAWA Wine.
           </p>
           <div className="hero__ctas">
@@ -2098,8 +2127,8 @@ p { margin: 0 0 1em; }
 .division--metals .division__visual {
   background: radial-gradient(80% 90% at 50% 100%, #1f5fb8 0%, #0b2a63 70%);
 }
-.division--tobacco .division__visual {
-  background: radial-gradient(80% 90% at 50% 100%, #6b4423 0%, #2a1a0f 75%);
+.division--accessories .division__visual {
+  background: radial-gradient(80% 90% at 50% 100%, #4a3415 0%, #140d06 75%);
 }
 .division__visual::after {
   content: ""; position: absolute; inset: 0;
@@ -2125,26 +2154,14 @@ p { margin: 0 0 1em; }
 .bar:nth-child(3) { animation-delay: -3s; }
 .bar:nth-child(4) { animation-delay: -4.5s; }
 
-.leaf { position: absolute; width: 170px; left: 50%; top: 50%; transform: translate(-70%, -54%) rotate(-24deg); filter: drop-shadow(0 16px 20px rgba(0,0,0,.4)); animation: sway 7s ease-in-out infinite; }
-@keyframes sway { 0%, 100% { transform: translate(-70%, -54%) rotate(-24deg); } 50% { transform: translate(-70%, -58%) rotate(-19deg); } }
-.cigar {
-  position: absolute; left: 50%; top: 58%; width: 230px; height: 26px; transform: translateX(-38%) rotate(-8deg);
-  border-radius: 14px 6px 6px 14px;
-  background: linear-gradient(180deg, #a86d37 0%, #7a4a22 45%, #4e2d12 100%);
-  box-shadow: 0 14px 22px -8px rgba(0,0,0,.55), inset 0 2px 0 rgba(255,255,255,.18);
-}
-.cigar::before {
-  content: ""; position: absolute; right: -2px; top: 2px; bottom: 2px; width: 10px; border-radius: 4px;
-  background: radial-gradient(circle at 30% 50%, #ffcf7a 0%, #e0612b 40%, #5b3a26 75%);
-  animation: ember 3s ease-in-out infinite;
-}
-@keyframes ember { 0%, 100% { filter: brightness(.9); } 50% { filter: brightness(1.35); } }
-.cigar__band {
-  position: absolute; left: 28%; top: -1px; bottom: -1px; width: 52px;
-  display: grid; place-items: center;
-  font: 700 .6rem/1 var(--font-display); letter-spacing: .16em; color: #3b2603;
-  background: var(--gold-grad);
-}
+.accessories { width: min(88%, 380px); height: auto; overflow: visible; filter: drop-shadow(0 18px 22px rgba(0, 0, 0, .55)); }
+.acc { transform-box: fill-box; transform-origin: 50% 100%; animation: accFloat 6s ease-in-out infinite; }
+.acc--chalice { animation-delay: -2s; }
+.acc--papers { animation-delay: -4s; }
+@keyframes accFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+.acc-spark { transform-box: fill-box; transform-origin: center; animation: twinkle 3.2s ease-in-out infinite; }
+.acc-spark:nth-child(2) { animation-delay: -1.1s; }
+.acc-spark:nth-child(3) { animation-delay: -2.2s; }
 
 .chips { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .45rem; }
 .chips li { font-size: .82rem; font-weight: 600; padding: .35rem .75rem; border-radius: 999px; background: var(--gold-50); color: var(--gold-700); }

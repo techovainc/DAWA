@@ -1,7 +1,7 @@
 {
   "name": "DAWA Wholesale Distribution",
   "short_name": "DAWA",
-  "description": "Wholesale distribution of precious metals and tobacco for licensed trade partners, delivered worldwide.",
+  "description": "Wholesale precious metals and 18K–24K gold smoking accessories for trade partners, delivered worldwide.",
   "id": "./",
   "start_url": "./?source=pwa",
   "scope": "./",
