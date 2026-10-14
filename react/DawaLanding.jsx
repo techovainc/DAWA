@@ -208,7 +208,7 @@ export default function DawaLanding() {
 
               <article className="division division--accessories reveal">
                 <div className="division__visual" aria-hidden="true">
-                  <svg className="accessories" viewBox="0 -28 360 228">
+                  <svg className="accessories" viewBox="0 -28 380 228">
                     <defs>
                       <linearGradient id="accGold" x1="0" y1="0" x2="1" y2="1">
                         <stop offset="0" stopColor="#fff4c4"/>
@@ -260,26 +260,23 @@ export default function DawaLanding() {
                         <path d="M191 12 C186 5 195 0 190 -8"/>
                       </g>
                     </g>
-                    {/* 24K gold king-size rolling papers: fanned gold-leaf sheets over a slim booklet */}
+                    {/* 24K gold king-size rolling papers: unbranded 6-sheet pack with gold-leaf window, plus an empty gold cone */}
                     <g className="acc acc--papers">
-                      <g className="acc-sheets">
-                        <g className="acc-sheet" transform="rotate(-16 300 140)">
-                          <rect x="252" y="96" width="96" height="24" rx="1.5" fill="url(#accGold)"/>
-                          <path d="M258 104 l12 3 l10 -2 l14 4 l12 -3 l16 3 M262 113 l16 -2 l12 3 l18 -2 l14 2" stroke="#fff6d2" strokeWidth=".9" fill="none" opacity=".55"/>
-                        </g>
-                        <g className="acc-sheet" transform="rotate(-7 300 140)">
-                          <rect x="252" y="104" width="96" height="24" rx="1.5" fill="url(#accGoldH)"/>
-                          <path d="M258 112 l14 3 l12 -3 l14 3 l12 -2 l14 2 M260 121 l12 -2 l16 2 l14 -3 l16 2" stroke="#fff6d2" strokeWidth=".9" fill="none" opacity=".55"/>
-                        </g>
-                        <g className="acc-sheet" transform="rotate(1 300 140)">
-                          <rect x="252" y="112" width="96" height="24" rx="1.5" fill="url(#accGold)"/>
-                          <path d="M258 120 l12 2 l14 -3 l12 3 l16 -2 l12 2 M262 129 l14 -2 l12 3 l16 -3 l14 2" stroke="#fff6d2" strokeWidth=".9" fill="none" opacity=".55"/>
-                        </g>
+                      <rect x="252" y="54" width="86" height="122" rx="3" fill="#1d4532"/>
+                      <rect x="252" y="54" width="86" height="122" rx="3" fill="none" stroke="#2c5f45" strokeWidth="1.2"/>
+                      <text x="257" y="63.5" fontFamily="system-ui, sans-serif" fontSize="3.8" letterSpacing=".6" fill="#d9e6dc">6-SHEET PACK</text>
+                      <text x="333" y="63.5" textAnchor="end" fontFamily="system-ui, sans-serif" fontSize="3.8" letterSpacing=".6" fill="#d9e6dc">KING SIZE</text>
+                      <rect className="acc-leaf" x="259" y="68" width="72" height="62" fill="url(#accGold)"/>
+                      <path d="M263 78 l12 4 l10 -3 l14 5 l12 -3 l14 4 M261 96 l14 -3 l12 4 l16 -2 l14 3 l8 -2 M265 116 l12 3 l14 -4 l12 3 l16 -2 l6 2" stroke="#fff6d2" strokeWidth=".8" fill="none" opacity=".6"/>
+                      <rect x="259" y="68" width="72" height="62" fill="none" stroke="#0f2a1e" strokeWidth="1"/>
+                      <circle cx="263" cy="162" r="5.2" fill="#f3f1ea"/>
+                      <text x="263" y="163.8" textAnchor="middle" fontFamily="system-ui, sans-serif" fontSize="4.2" fontWeight="700" fill="#1d4532">24K</text>
+                      <text x="271" y="163.6" fontFamily="system-ui, sans-serif" fontSize="4.6" letterSpacing=".5" fill="#f3f1ea">GOLD ROLLING PAPERS</text>
+                      <g transform="rotate(12 356 120)">
+                        <path d="M349 64 H363 L359 176 H353 Z" fill="url(#accGoldH)"/>
+                        <ellipse cx="356" cy="64" rx="7" ry="2.2" fill="#5a3a10"/>
+                        <path d="M353 72 l4 10 l-2 12 l4 14 l-3 16 l4 18 l-3 20" stroke="#fff6d2" strokeWidth=".8" fill="none" opacity=".55"/>
                       </g>
-                      <rect x="250" y="138" width="100" height="36" rx="4" fill="#1f140b" stroke="url(#accGoldH)" strokeWidth="2"/>
-                      <path d="M250 147 H350" stroke="url(#accGoldH)" strokeWidth="1" opacity=".6"/>
-                      <text x="300" y="164" textAnchor="middle" fontFamily="Georgia, serif" fontSize="12" fontWeight="700" letterSpacing="2" fill="#f0c665">24K GOLD</text>
-                      <text x="300" y="171" textAnchor="middle" fontFamily="system-ui, sans-serif" fontSize="4.6" letterSpacing="1.6" fill="#c9a35a">KING SIZE · GOLD LEAF</text>
                     </g>
                     <g className="acc-sparks" fill="#fffbe6">
                       <path className="acc-spark" d="M60 52 l2.5 7 7 2.5 -7 2.5 -2.5 7 -2.5 -7 -7 -2.5 7 -2.5 Z"/>
@@ -2186,7 +2183,7 @@ p { margin: 0 0 1em; }
 .bar:nth-child(3) { animation-delay: -3s; }
 .bar:nth-child(4) { animation-delay: -4.5s; }
 
-.accessories { width: min(88%, 380px); height: auto; overflow: visible; filter: drop-shadow(0 18px 22px rgba(0, 0, 0, .55)); }
+.accessories { width: min(90%, 352px); height: auto; overflow: visible; filter: drop-shadow(0 18px 22px rgba(0, 0, 0, .55)); }
 .acc { transform-box: fill-box; transform-origin: 50% 100%; animation: accFloat 6s ease-in-out infinite; }
 .acc--chalice { animation-delay: -2s; }
 .acc--papers { animation-delay: -4s; }
@@ -2195,8 +2192,8 @@ p { margin: 0 0 1em; }
 .acc-steam path:nth-child(2) { animation-delay: -1.2s; }
 .acc-steam path:nth-child(3) { animation-delay: -2.4s; }
 @keyframes steam { 0% { opacity: 0; transform: translateY(6px); } 30% { opacity: .7; } 100% { opacity: 0; transform: translateY(-14px); } }
-.acc-sheets { transform-box: fill-box; transform-origin: 10% 100%; animation: sheetFan 5s ease-in-out infinite; }
-@keyframes sheetFan { 0%, 100% { transform: rotate(0deg); } 50% { transform: rotate(-3deg); } }
+.acc-leaf { animation: leafGlint 4s ease-in-out infinite; }
+@keyframes leafGlint { 0%, 100% { filter: brightness(1); } 50% { filter: brightness(1.18); } }
 .acc-spark { transform-box: fill-box; transform-origin: center; animation: twinkle 3.2s ease-in-out infinite; }
 .acc-spark:nth-child(2) { animation-delay: -1.1s; }
 .acc-spark:nth-child(3) { animation-delay: -2.2s; }
