@@ -1,5 +1,5 @@
 /* DAWA service worker — offline app shell, stale-while-revalidate for everything else */
-const VERSION = 'dawa-v7';
+const VERSION = 'dawa-v8';
 const SHELL = [
   './',
   'index.html',
@@ -12,6 +12,8 @@ const SHELL = [
   'assets/gallery/gold-papers-pack.webp',
   'assets/gallery/gold-cone.webp',
   'assets/gallery/dawa-wine.webp',
+  'assets/gallery/tasting-2021-dinner.webp',
+  'assets/gallery/tasting-2021-table.webp',
   'assets/data/land.json',
   'manifest.webmanifest',
   'assets/icons/favicon-32.png',

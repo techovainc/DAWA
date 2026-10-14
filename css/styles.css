@@ -634,6 +634,23 @@ p { margin: 0 0 1em; }
 }
 .event__icon svg { width: 26px; height: 26px; }
 .event p { color: rgba(255,255,255,.72); margin: 0; }
+/* ---- First tasting photos ---- */
+.events__story { margin-top: 3rem; display: grid; gap: 1.5rem; }
+.events__story-head { max-width: 46em; }
+.events__story-head h3 { font-size: clamp(1.5rem, 3vw, 2.1rem); }
+.events__story-head p { margin: 0; color: rgba(255, 255, 255, .75); }
+.events__gallery {
+  position: relative; width: 100%; aspect-ratio: 16 / 9; max-height: 620px;
+  border-radius: var(--radius); overflow: hidden;
+  background: #140d06;
+  border: 1px solid rgba(242, 207, 124, .3);
+  box-shadow: 0 30px 60px -30px rgba(0, 0, 0, .8);
+}
+.gallery--wide .gallery__img { object-fit: cover; padding: 0; }
+@media (max-width: 640px) {
+  .events__gallery { aspect-ratio: 4 / 3.4; }
+}
+
 /* ---- DAWA Wine ---- */
 .wine {
   position: relative;
