@@ -240,24 +240,51 @@ export default function DawaLanding() {
                         <ellipse cx="40" cy="116.6" rx="13" ry="5" fill="#1a1006"/>
                       </g>
                     </g>
-                    {/* steam chalice: water vessel, stem, bowl and draw hose */}
+                    {/* steam chalice (after the supplied reference): engraved bell base with sun emblem,
+                         vase stem, flared bowl with coals and steam, white hose with gold spiral wraps */}
                     <g className="acc acc--chalice">
-                      <path d="M211 132 C236 130 244 104 240 74" stroke="url(#accGoldH)" strokeWidth="7" fill="none" strokeLinecap="round"/>
-                      <rect x="234" y="62" width="11" height="14" rx="3" fill="url(#accGold)"/>
-                      <rect x="171" y="40" width="18" height="70" rx="3" fill="url(#accGoldH)"/>
-                      <ellipse cx="180" cy="62" rx="12" ry="4" fill="url(#accGold)"/>
-                      <ellipse cx="180" cy="86" rx="12" ry="4" fill="url(#accGold)"/>
-                      <path d="M156 18 H204 L195 44 H165 Z" fill="url(#accGold)"/>
-                      <ellipse cx="180" cy="18" rx="24" ry="5.5" fill="#ffeaa6"/>
-                      <ellipse cx="180" cy="19" rx="18" ry="3.5" fill="#5a3a10"/>
-                      <rect x="166" y="104" width="28" height="14" rx="4" fill="url(#accGold)"/>
-                      <path d="M156 116 C138 128 134 158 150 172 C162 182 198 182 210 172 C226 158 222 128 204 116 Z" fill="url(#accGold)"/>
-                      <ellipse cx="180" cy="176" rx="30" ry="5" fill="url(#accGoldH)"/>
-                      <path d="M152 134 C147 148 149 160 157 168" stroke="#fff6d2" strokeWidth="3" fill="none" opacity=".6" strokeLinecap="round"/>
+                      <defs>
+                        <clipPath id="accBell"><path d="M150 176 C150 138 160 114 188 110 C216 114 226 138 226 176 Z"/></clipPath>
+                      </defs>
+                      <path d="M220 124 C226 98 234 78 241 79 C249 81 249 116 248 148 C247 170 241 182 226 187" stroke="#efe6d4" strokeWidth="6" fill="none" strokeLinecap="round"/>
+                      <path d="M220 124 C226 98 234 78 241 79 C249 81 249 116 248 148 C247 170 241 182 226 187" stroke="#c9952e" strokeWidth="6" fill="none" strokeDasharray="1.6 4" opacity=".85"/>
+                      <rect x="215" y="118" width="9" height="7" rx="1.5" fill="url(#accGoldH)" transform="rotate(-62 219 121)"/>
+                      <path d="M150 176 C150 138 160 114 188 110 C216 114 226 138 226 176 Z" fill="url(#accGold)"/>
+                      <g clipPath="url(#accBell)" stroke="#8f5c14" fill="none" opacity=".75">
+                        <path d="M140 120 H236 M140 125 H236 M140 166 H236 M140 170 H236" strokeWidth="1"/>
+                        <path d="M156 132 V164 M163 128 V166 M213 128 V166 M220 132 V164" strokeWidth=".7" opacity=".6"/>
+                      </g>
+                      <path d="M160 136 C162 126 170 118 180 115" stroke="#fff6d2" strokeWidth="2.4" fill="none" opacity=".6" strokeLinecap="round"/>
+                      <g stroke="#a8701f" strokeWidth="1.3" strokeLinecap="round"><path d="M195.5 148.0 L208.0 148.0"/><path d="M195.0 150.6 L202.1 153.1"/><path d="M193.7 152.8 L203.3 160.9"/><path d="M191.8 154.5 L195.5 161.0"/><path d="M189.3 155.4 L191.5 167.7"/><path d="M186.7 155.4 L185.4 162.8"/><path d="M184.2 154.5 L178.0 165.3"/><path d="M182.3 152.8 L176.5 157.6"/><path d="M181.0 150.6 L169.2 154.8"/><path d="M180.5 148.0 L173.0 148.0"/><path d="M181.0 145.4 L169.2 141.2"/><path d="M182.3 143.2 L176.5 138.4"/><path d="M184.2 141.5 L178.0 130.7"/><path d="M186.7 140.6 L185.4 133.2"/><path d="M189.3 140.6 L191.5 128.3"/><path d="M191.8 141.5 L195.5 135.0"/><path d="M193.7 143.2 L203.3 135.1"/><path d="M195.0 145.4 L202.1 142.9"/></g>
+                      <circle cx="188" cy="148" r="6.5" fill="url(#accGoldH)" stroke="#8f5c14" strokeWidth=".8"/>
+                      <circle cx="186" cy="146" r="2" fill="#fff6d2" opacity=".8"/>
+                      <rect x="146" y="173" width="84" height="7" rx="2.5" fill="url(#accGoldH)"/>
+                      <path d="M226 187 C206 191 186 191 170 188" stroke="#efe6d4" strokeWidth="6" fill="none" strokeLinecap="round"/>
+                      <path d="M226 187 C206 191 186 191 170 188" stroke="#c9952e" strokeWidth="6" fill="none" strokeDasharray="1.6 4" opacity=".85"/>
+                      <g transform="rotate(-4 160 188)">
+                        <rect x="146" y="184" width="26" height="8" rx="2" fill="url(#accGoldH)"/>
+                        <rect x="167" y="183" width="5" height="10" rx="1.5" fill="url(#accGold)"/>
+                        <g fill="#5a3a10"><circle cx="152" cy="188" r=".9"/><circle cx="156" cy="188" r=".9"/><circle cx="160" cy="188" r=".9"/></g>
+                      </g>
+                      <rect x="184" y="88" width="8" height="24" fill="url(#accGoldH)"/>
+                      <ellipse cx="188" cy="111" rx="9" ry="2.6" fill="url(#accGold)"/>
+                      <path d="M182 50 C171 60 171 80 181 92 H195 C205 80 205 60 194 50 Z" fill="url(#accGold)"/>
+                      <path d="M178 62 l4 3 l-3 4 l4 3 l-3 4 l4 3 M198 62 l-4 3 l3 4 l-4 3 l3 4 l-4 3" stroke="#a8701f" strokeWidth=".7" fill="none" opacity=".7"/>
+                      <path d="M180 58 C176 66 176 78 181 86" stroke="#fff6d2" strokeWidth="1.8" fill="none" opacity=".6" strokeLinecap="round"/>
+                      <path d="M163 26 H213 L197 50 H179 Z" fill="url(#accGold)"/>
+                      <ellipse cx="188" cy="26" rx="25" ry="4.6" fill="#ffeaa6"/>
+                      <g stroke="#a8701f" strokeWidth=".8" strokeLinecap="round"><path d="M190.6 37.0 L193.5 37.0"/><path d="M190.3 38.3 L192.8 39.8"/><path d="M189.3 39.3 L190.8 41.8"/><path d="M188.0 39.6 L188.0 42.5"/><path d="M186.7 39.3 L185.2 41.8"/><path d="M185.7 38.3 L183.2 39.8"/><path d="M185.4 37.0 L182.5 37.0"/><path d="M185.7 35.7 L183.2 34.2"/><path d="M186.7 34.7 L185.2 32.2"/><path d="M188.0 34.4 L188.0 31.5"/><path d="M189.3 34.7 L190.8 32.2"/><path d="M190.3 35.7 L192.8 34.2"/></g>
+                      <circle cx="188" cy="37" r="2.4" fill="url(#accGoldH)"/>
+                      <g fill="#2b2622">
+                        <path d="M172 26 l3 -6 l6 -1 l3 5 l-2 2 Z"/>
+                        <path d="M181 25 l2 -7 l7 -1 l4 6 l-3 2 Z"/>
+                        <path d="M192 25 l3 -6 l6 0 l3 6 Z"/>
+                        <path d="M185 22 l4 -5 l5 1 l1 4 Z" fill="#3a332d"/>
+                      </g>
                       <g className="acc-steam" fill="none" stroke="#fff8e6" strokeLinecap="round" strokeWidth="2.4">
-                        <path d="M172 12 C166 4 176 -2 170 -10"/>
-                        <path d="M182 12 C188 2 178 -4 184 -14"/>
-                        <path d="M191 12 C186 5 195 0 190 -8"/>
+                        <path d="M180 14 C174 6 184 0 178 -8"/>
+                        <path d="M190 13 C196 3 186 -3 192 -13"/>
+                        <path d="M199 14 C194 7 203 2 198 -6"/>
                       </g>
                     </g>
                     {/* 24K gold king-size rolling papers: unbranded 6-sheet pack with gold-leaf window, plus an empty gold cone */}
