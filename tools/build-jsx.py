@@ -182,7 +182,7 @@ export default function DawaLanding() {{
   // "Install app" button (shown when the browser offers PWA installation)
   useEffect(() => {{
     const onPrompt = (e) => {{ e.preventDefault(); setInstallPrompt(e); }};
-    const onInstalled = () => {{ setInstallPrompt(null); setToast('DAWA was installed on your device.'); }};
+    const onInstalled = () => {{ setInstallPrompt(null); setToast('DAWA™ was installed on your device.'); }};
     window.addEventListener('beforeinstallprompt', onPrompt);
     window.addEventListener('appinstalled', onInstalled);
     return () => {{

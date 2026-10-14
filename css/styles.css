@@ -691,6 +691,7 @@ p { margin: 0 0 1em; }
   -webkit-background-clip: text; background-clip: text; color: transparent;
   animation: goldShift 6s ease-in-out infinite alternate;
 }
+.tm { font-size: .36em; line-height: 0; vertical-align: 1.3em; margin-left: .04em; font-family: var(--font-body); font-weight: 600; }
 .wine__lead { color: rgba(255, 255, 255, .85); font-size: 1.08rem; max-width: 34em; }
 .wine__facts { list-style: none; padding: 0; margin: 1.75rem 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
 .wine__facts li { padding: 1rem; border-radius: 14px; background: rgba(255, 255, 255, .05); border: 1px solid rgba(242, 207, 124, .2); text-align: center; }

@@ -45,7 +45,7 @@ export default function DawaLanding() {
   // "Install app" button (shown when the browser offers PWA installation)
   useEffect(() => {
     const onPrompt = (e) => { e.preventDefault(); setInstallPrompt(e); };
-    const onInstalled = () => { setInstallPrompt(null); setToast('DAWA was installed on your device.'); };
+    const onInstalled = () => { setInstallPrompt(null); setToast('DAWA™ was installed on your device.'); };
     window.addEventListener('beforeinstallprompt', onPrompt);
     window.addEventListener('appinstalled', onInstalled);
     return () => {
@@ -133,8 +133,8 @@ export default function DawaLanding() {
       <a className="skip-link" href="#main">Skip to content</a>
 
     <header className={`nav${scrolled || menuOpen ? " is-scrolled" : ""}`}>
-        <a className="brand" href="#top" aria-label="DAWA — home">
-            <img className="brand__logo" src={LOGO} alt="DAWA" width="720" height="156" />
+        <a className="brand" href="#top" aria-label="DAWA™ — home">
+            <img className="brand__logo" src={LOGO} alt="DAWA™" width="720" height="156" />
           <span className="brand__tagline">Wholesale Distribution</span>
         </a>
 
@@ -171,7 +171,7 @@ export default function DawaLanding() {
         </div>
 
         {/* Stats */}
-        <section className="section stats" aria-label="DAWA at a glance">
+        <section className="section stats" aria-label="DAWA™ at a glance">
           <div className="container stats__grid">
             <div className="stat reveal"><strong data-count="40" data-suffix="+">40+</strong><span>Destination markets</span></div>
             <div className="stat reveal"><strong data-count="2">2</strong><span>Specialist divisions</span></div>
@@ -312,7 +312,7 @@ export default function DawaLanding() {
               <p className="kicker">Partner events</p>
               <h2>Experience it before you stock it</h2>
               <p>We host private, trade-only events where business partners meet producers,
-                experience our products in person, and raise a glass of DAWA Wine, our signature
+                experience our products in person, and raise a glass of DAWA™ Reserve, our signature
                 served nowhere else.</p>
             </header>
 
@@ -348,9 +348,9 @@ export default function DawaLanding() {
                 <p>A long table under the trees, our first partners around it, and glasses set for the first pour.</p>
               </div>
               <div className="events__gallery">
-                <div className="gallery gallery--wide" data-gallery role="region" aria-roledescription="carousel" aria-label="Photos from DAWA's first private tasting, June 2021">
+                <div className="gallery gallery--wide" data-gallery role="region" aria-roledescription="carousel" aria-label="Photos from DAWA™'s first private tasting, June 2021">
                   <figure className="gallery__slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 3">
-                    <img className="gallery__img" src={GALLERY['tasting-2021-dinner']} alt="Guests seated at a long white-draped table under the trees, with sunflowers and string lights, at DAWA’s first private tasting in June 2021" width="1600" height="900" loading="lazy" decoding="async" />
+                    <img className="gallery__img" src={GALLERY['tasting-2021-dinner']} alt="Guests seated at a long white-draped table under the trees, with sunflowers and string lights, at DAWA™’s first private tasting in June 2021" width="1600" height="900" loading="lazy" decoding="async" />
                     <figcaption><strong>A Seat At The Table</strong><span>First private tasting · June 2021</span></figcaption>
                   </figure>
                   <figure className="gallery__slide" role="group" aria-roledescription="slide" aria-label="2 of 3" aria-hidden="true">
@@ -376,29 +376,29 @@ export default function DawaLanding() {
               </div>
             </div>
 
-            {/* DAWA Wine — event-exclusive signature tonic */}
+            {/* DAWA Reserve — event-exclusive signature brew */}
             <article className="wine reveal" id="dawa-wine" aria-labelledby="wine-title">
               <figure className="wine__visual">
-                <img className="wine__photo" src={GALLERY['dawa-wine']} alt="A bottle of DAWA Wine, golden amber with DAWA lettering down the glass, standing on a tree stump by sunlit water" width="1400" height="786" loading="lazy" decoding="async" />
+                <img className="wine__photo" src={GALLERY['dawa-wine']} alt="A bottle of DAWA™ Reserve, golden amber with DAWA lettering down the glass, standing on a tree stump by sunlit water" width="1400" height="786" loading="lazy" decoding="async" />
               </figure>
 
               <div className="wine__body">
                 <p className="kicker">Events-only signature</p>
-                <h3 className="wine__title" id="wine-title">DAWA Wine</h3>
-                <p className="wine__lead">Our proprietary tonic, crafted from barks gathered in the Amazon rainforest.
+                <h3 className="wine__title" id="wine-title">DAWA<sup className="tm">™</sup> Reserve</h3>
+                <p className="wine__lead">Our signature brew, crafted from barks gathered in the Amazon rainforest.
                   It is brewed just once a year over eight patient months, and it is never sold —
-                  you can only taste it at a DAWA partner event.</p>
+                  you can only taste it at a DAWA™ partner event.</p>
                 <ul className="wine__facts">
                   <li><strong>1</strong><span>Batch a year</span></li>
                   <li><strong>8</strong><span>Months in the making</span></li>
                   <li><strong>0</strong><span>Bottles sold in stores</span></li>
                 </ul>
-                <p className="wine__note">Served only to adult guests at DAWA events, where local law allows. Please enjoy responsibly.</p>
+                <p className="wine__note">Served only to adult guests at DAWA™ events, where local law allows. Please enjoy responsibly.</p>
               </div>
             </article>
 
             <div className="events__cta reveal">
-              <p>Invitations go to registered trade partners. New to DAWA? Request an invitation to the next event near you.</p>
+              <p>Invitations go to registered trade partners. New to DAWA™? Request an invitation to the next event near you.</p>
               <a className="btn btn--gold" href="#contact" onClick={() => setEnquiry("Partner event invitation")}>Request an invitation</a>
             </div>
           </div>
@@ -481,12 +481,12 @@ export default function DawaLanding() {
 
       <footer className="footer">
         <div className="container footer__inner">
-          <a className="brand brand--footer" href="#top" aria-label="DAWA — back to top">
-              <img className="brand__logo" src={LOGO} alt="DAWA" width="720" height="156" loading="lazy" />
+          <a className="brand brand--footer" href="#top" aria-label="DAWA™ — back to top">
+              <img className="brand__logo" src={LOGO} alt="DAWA™" width="720" height="156" loading="lazy" />
             <span className="brand__tagline">Wholesale Distribution</span>
           </a>
           <p>© {new Date().getFullYear()} DAWA CULTIVATION, a New York State Limited Liability Company. All rights reserved.</p>
-          <p className="footer__note">Trade customers only. Golden Lounge Accessories are sold only to adults of legal age. DAWA does not sell, supply or ship tobacco or any smokable product. DAWA Wine is served only at private DAWA events to guests of legal drinking age; please enjoy responsibly. Prices and availability are subject to market conditions.</p>
+          <p className="footer__note">Trade customers only. Golden Lounge Accessories are sold only to adults of legal age. DAWA™ does not sell, supply or ship tobacco or any smokable product. DAWA™ Reserve is served only at private DAWA™ events to guests of legal drinking age; please enjoy responsibly. Prices and availability are subject to market conditions.</p>
         </div>
       </footer>
 
@@ -671,7 +671,7 @@ const Hero = memo(function Hero() {
                   <circle cx="860" cy="152" r="2.6"/><circle cx="880" cy="151" r="2.6"/><circle cx="900" cy="151" r="2.6"/><circle cx="920" cy="150" r="2.6"/>
                 </g>
                 {/* name */}
-                <text x="740" y="190" fill="#ffffff" fontFamily="Georgia, 'Times New Roman', serif" fontSize="30" letterSpacing="6" fontWeight="700" opacity=".95">DAWA</text>
+                <text x="740" y="190" fill="#ffffff" fontFamily="Georgia, 'Times New Roman', serif" fontSize="30" letterSpacing="6" fontWeight="700" opacity=".95">DAWA™</text>
                 {/* anchor */}
                 <g transform="translate(944 160)" fill="#c49a3d">
                   <rect x="-2" y="-12" width="4" height="22"/>
@@ -702,9 +702,9 @@ const Hero = memo(function Hero() {
           </p>
           <h1 className="hero__title">Premium goods,<br /><span className="gold-text">delivered worldwide.</span></h1>
           <p className="hero__lead">
-            DAWA supplies precious metals and solid-gold accessories to trade partners — sourced from
+            DAWA™ supplies precious metals and solid-gold accessories to trade partners — sourced from
             trusted refiners and goldsmiths, fully insured and shipped by air and sea. Then we invite you to
-            experience them first-hand, with a glass of DAWA Wine.
+            experience them first-hand, with a glass of DAWA™ Reserve.
           </p>
           <div className="hero__ctas">
             <a className="btn btn--gold" href="#contact">Become a partner</a>
@@ -2374,6 +2374,7 @@ p { margin: 0 0 1em; }
   -webkit-background-clip: text; background-clip: text; color: transparent;
   animation: goldShift 6s ease-in-out infinite alternate;
 }
+.tm { font-size: .36em; line-height: 0; vertical-align: 1.3em; margin-left: .04em; font-family: var(--font-body); font-weight: 600; }
 .wine__lead { color: rgba(255, 255, 255, .85); font-size: 1.08rem; max-width: 34em; }
 .wine__facts { list-style: none; padding: 0; margin: 1.75rem 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
 .wine__facts li { padding: 1rem; border-radius: 14px; background: rgba(255, 255, 255, .05); border: 1px solid rgba(242, 207, 124, .2); text-align: center; }

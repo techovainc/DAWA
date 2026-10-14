@@ -55,7 +55,7 @@
   });
   window.addEventListener('appinstalled', () => {
     installBtn.hidden = true;
-    showToast('DAWA was installed on your device.');
+    showToast('DAWA™ was installed on your device.');
   });
 
   /* ---- Reveal on scroll + count-up stats ---- */
