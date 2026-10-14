@@ -2335,7 +2335,7 @@ p { margin: 0 0 1em; }
   .events__gallery { aspect-ratio: 4 / 3.4; }
 }
 
-/* ---- DAWA Wine ---- */
+/* ---- DAWA Reserve ---- */
 .wine {
   position: relative;
   margin-top: 3rem;
